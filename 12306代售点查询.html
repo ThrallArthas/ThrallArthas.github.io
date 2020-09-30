@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			body{
+				font-size: 12px;/* 设置页面统一字体大小*/
+			}
+			#search{/* 查询div样式 */
+				width: 980px;
+				background-color: #eef1f8;
+				font-size: 14px;
+				line-height: 50px;
+				border: 1px solid #298cce; 
+			    margin: 0 auto;/*div整体水平居中*/
+				margin-bottom: 10px;
+				
+			}
+			.required { /* 星号strong样式 */
+			    font-size: 16px;
+			    color: #f00;
+			    margin-right: 8px;
+				margin-left: 25px;
+			    font-weight: 400;
+			}
+			 select {  /* 下拉列表strong样式 */
+			    width: 150px;
+				height: 30px;
+				line-height: 30px;
+			    font-size: 14px;
+			}
+			.fg-line { /* 下拉列表中间横线样式 */
+				height: 30px;
+			    line-height: 30px;
+			    text-align: center;
+			    color: #999;
+			}
+			button { /* 查询按钮样式 */
+			    width: 120px;
+				height: 30px;
+				line-height: 30px;
+				margin-left: 50px;
+				color: white;
+				border: none;/* 去掉默认边框 */
+				background-color: #F79209;
+			}
+			
+			#tip{ /* 提示div样式 */
+				width: 980px;
+				line-height: 25px;
+			    margin: 0 auto;/*div整体水平居中*/
+				margin-bottom: 15px;
+			}
+			.colorA {/*重点突出文字颜色 */
+			    color: #fb7403;
+			}
+			
+			table{/*表格样式*/
+				border: 1px solid #0000FF;
+				border-collapse: collapse;
+				margin: 0 auto;/*表格整体水平居中*/
+				width: 980px;
+			}
+			td{/* 列样式*/
+				border-bottom: 1px solid #298CCE;
+				line-height: 32px;
+				text-align: center;
+			 }
+			.firsttr{/*第一行样式 */
+				background-color: #278ACB;
+				line-height: 45px;
+				color: white;
+			}
+			.left{
+				text-align: left;/*第二 第三例 文字居左 */
+			}
+			.trb{
+				background-color: #eef1f8;/*设置偶数行背景颜色 */
+			}
+		</style>
+	</head>
+	<body>
+		<div id="search">
+			<strong class="required">*</strong>所在地区&nbsp;
+			<select>
+				<option>请选择省</option>
+				<option>安徽</option>
+			</select>
+			<span class="fg-line">--</span>
+			<select>
+				<option>请选择市</option>
+				<option>六安</option>
+			</select>
+			<span class="fg-line">--</span>
+			<select>
+				<option>请选择区/县</option>
+				<option>六安市</option>
+			</select>
+			<button>查询</button>
+		</div>
+		<div id="tip">
+			<strong class="colorA">安徽六安市</strong>&nbsp;共有&nbsp;<strong class="colorA">14</strong>&nbsp;个代售点
+		</div>
+		<table>
+			<thead>
+				<tr class="firsttr">
+					<!-- 设置表格第一行的列的宽度 后面所有行的列都是统一宽度-->
+					<td width="95px">序号</td>
+					<td width="300px">代售点名称</td>
+					<td width="300px">地址</td>
+					<td width="130px">营业时间</td>
+					<td width="130px">窗口数量</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td class="left">舒城客票代售点</td>
+					<td class="left">安徽省舒城市梅河路</td>
+					<td>08:00-17:00	</td>
+					<td>1</td>
+				</tr>
+				<tr class="trb">
+					<td>2</td>
+					<td class="left">六安市第四自助客票代售点</td>
+					<td class="left">六安市霍邱县城关镇蓼城路6号</td>
+					<td>00:00-00:00</td>
+					<td>1</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td class="left">霍山客票代售点</td>
+					<td class="left">安徽省六安市霍山县城关迎驾大道1号</td>
+					<td>08:00-18:00</td>
+					<td>1</td>
+				</tr>
+				<tr class="trb">
+					<td>4</td>
+					<td class="left">	六安市第一自助客票代售点		</td>
+					<td class="left">六安市金安区皖西路32号</td>
+					<td>08:00-18:00</td>
+					<td>1</td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td class="left">六安客票代售点		</td>
+					<td class="left">安徽省六安市公交南站换乘中心门面房1号</td>
+					<td>08:00-17:00</td>
+					<td>1</td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>
